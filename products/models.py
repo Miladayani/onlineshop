@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import reverse
 
 
 class Product(models.Model):
@@ -9,3 +10,9 @@ class Product(models.Model):
 
     date_created = models.DateField(auto_now_add=True)
     date_modified = models.DateField(auto_now=True)
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('products_detail', args={self.pk})
