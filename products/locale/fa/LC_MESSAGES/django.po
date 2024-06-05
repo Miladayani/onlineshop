@@ -79,4 +79,4 @@ msgstr "ارسال"
 
 #: .\views.py:44
 msgid "Comment successfully created"
-msgstr ""
+msgstr "کامنت با موفقیت افزوده شد"
