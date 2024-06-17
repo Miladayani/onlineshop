@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'products',
     'cart',
     'persian_translate',
-    'ckeditor',
+    'orders',
 
     # third party
     'crispy_forms',
@@ -58,6 +58,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'rosetta',
     'django.contrib.humanize',
+    'phonenumber_field',
+    'phonenumbers',
+
 ]
 
 SITE_ID = 1
