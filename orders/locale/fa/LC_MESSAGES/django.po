@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-16 13:00+0330\n"
+"POT-Creation-Date: 2024-06-17 12:13+0330\n"
 "PO-Revision-Date: 2024-06-16 13:07+0330\n"
 "Last-Translator:   <miladayani526@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,11 @@ msgstr "تاریخ تغییر"
 msgid "Order"
 msgstr "ثبت سفارش"
 
-#: .\templates\orders\order_create.html:84
-#: .\templates\orders\order_create.html:92
+#: .\templates\orders\order_create.html:57
+msgid "Submit"
+msgstr "ارسال"
+
+#: .\templates\orders\order_create.html:81
+#: .\templates\orders\order_create.html:89
 msgid "$"
 msgstr "تومان"

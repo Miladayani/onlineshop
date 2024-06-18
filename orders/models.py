@@ -17,7 +17,7 @@ class Order(models.Model):
 
     order_note = models.TextField(_('Order Notes'), blank=True)
 
-    datetime_created = models.DateTimeField(_('Created'), auto_now_add=True)
+    datetime_created = models.DateTimeField(_('Created'), auto_now_add=True, blank=True)
     datetime_modified = models.DateTimeField(_('Modified'), auto_now=True)
 
     def __str__(self):

@@ -22,7 +22,7 @@ class Cart:
 
     def add(self, product, quantity=1, replace_current_quantity=False):
         """
-        Add a product to the cart if it exists
+        Add the specified product to the cart if it exists
         """
         product_id = str(product.id)
 
@@ -34,7 +34,7 @@ class Cart:
         else:
             self.cart[product_id]['quantity'] += quantity
 
-        messages.success(self.request, _('Product successfully added to Cart'))
+        messages.success(self.request, _('Product successfully added to cart'))
 
         self.save()
 
@@ -81,3 +81,8 @@ class Cart:
         product_ids = self.cart.keys()
 
         return sum(item['quantity'] * item['product_obj'].price for item in self.cart.values())
+
+    def is_empty(self):
+        if self.cart:
+            return False
+        return True
