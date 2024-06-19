@@ -27,6 +27,7 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('cart/', include('cart.urls')),
     path('order/', include('orders.urls')),
+    path('payment/', include('payment.urls')),
 
     # Rosetta (I18N)
     path('rosetta/', include('rosetta.urls')),
